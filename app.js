@@ -6,7 +6,7 @@ var usersRouter = require('./routes/users');
 var reminderRouter = require('./routes/reminder');
 var app = express();
 const cors = require('cors');
-mongoose.connect('mongodb://127.0.0.1:27017/reminder', { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
+mongoose.connect('mongodb+srv://nikhilbhu32:vKtuMjk9Q7IKA8I5@cluster0.aoma39t.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
   console.log("Connected to database!");
 }).catch((err) => {
   console.log("Connection failed!");
